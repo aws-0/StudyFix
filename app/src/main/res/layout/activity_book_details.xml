@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_fragments_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/book_english_12_ch0_sc"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="الكتاب:"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    />
+
+
+
+            <TextView
+                android:id="@+id/bookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="الكتاب:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bookGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصف:"
+                android:layout_marginTop="12dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الفرع:"
+                    android:layout_marginTop="12dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    />
+
+            <TextView
+                android:id="@+id/bookBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الفرع:"
+                android:layout_marginTop="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bookChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الفصل:"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+
+                >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/quiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="امتحانات"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:layout_gravity="center"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+
+
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:layout_marginEnd="8dp">
+
+
+                <TextView
+                    android:id="@+id/readBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="عرض الكتاب"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

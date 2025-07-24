@@ -19,7 +19,7 @@ class HomeFragment : Fragment() {
     lateinit var startBtn: Button
     lateinit var resetTv: TextView
 
-    val START_TIME_IN_MILLES: Long = 10 * 1000
+    val START_TIME_IN_MILLES: Long = 25 * 1000 * 60
     var remainingTime = START_TIME_IN_MILLES
     var timer: CountDownTimer? = null
     var isTimeRunning = false
